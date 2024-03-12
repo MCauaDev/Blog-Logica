@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo ao site de Lógica Aplicada! Aqui você encontrará conteúdos e recursos para aprimorar suas habilidades de programação.">
+    <meta name="keywords" content="lógica aplicada, programação, lógica, desenvolvimento web">
+    <meta name="author" content="Cauã Matos">
+    <title>Lógica Aplicada by Cauã M</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            position: relative;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        nav {
+            background-color: #212529;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffc107;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .feature {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .feature img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            animation: float 3s infinite ease-in-out;
+            box-shadow: 0 0 20px rgba(150, 0, 255, 0.8); /* simbra roxa */
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+                box-shadow: 0 0 20px rgba(150, 0, 255, 0.8), 0 0 20px rgba(150, 0, 255, 0.8); /* simbra roxa x2 */
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .feature h2 {
+            font-size: 1.8em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .feature p {
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Botão do WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            animation: float 3s infinite ease-in-out;
+        }
+        .whatsapp-btn img {
+            width: 60px;
+            height: auto;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .interactive-box {
+            margin-top: 50px;
+        }
+        .rating {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 48px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating label:before {
+            content: '\2605';
+        }
+        .rating label:hover,
+        .rating label:hover ~ label,
+        .rating input:checked ~ label {
+            color: #ffc107;
+        }
+        .rating input:checked ~ label:before,
+        .rating:not(:checked) > label:hover:before {
+            content: '\2605';
+        }
+        .rating input:checked ~ label:before {
+            content: '\2605';
+        }
+        .rating-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lógica Aplicada</h1>
+    <p>Blog para aula de Lógica Aplicada</p>
+</header>
+
+<nav>
+    <a href="#about">Sobre</a>
+    <a href="#features">Recursos</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="about">
+    <h2>Sobre</h2>
+    <p>Site desenvolvido com intuito de se parecer com um blog para o exercício da aula de Lógica Aplicada, Professor Rubens.</p>
+</section>
+
+<section id="features">
+    <h2>Recursos</h2>
+    <div class="feature">
+        <img src="https://th.bing.com/th/id/OIP.7NC11qf3DdnJzd2Qwv3WUgHaGY?rs=1&pid=ImgDetMain" alt="Heart Icon">
+        <div>
+            <h3>HTML</h3>
+            <p>HTML é a linguagem de marcação fundamental para a construção de páginas web. Com ela, você pode estruturar o conteúdo do seu site, criar links, incorporar imagens e vídeos, e muito mais.</p>
+            <p>Por exemplo, um trecho de código HTML simples para criar um parágrafo seria:</p>
+            <pre>&lt;p&gt;Este é um parágrafo em HTML.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <div class="feature">
+        <img src="https://th.bing.com/th/id/R.f462ea39ee7a688a9c46faa2d230907a?rik=gdVJOgOfym%2fv6Q&riu=http%3a%2f%2fwww.goldenapplewebdesign.com%2fwp-content%2fuploads%2f2011%2f07%2fcss3.jpg&ehk=XJePj%2bDwQf5elnrVTK24c%2fQvyJoDOV7RiybsjKJ7rso%3d&risl=&pid=ImgRaw&r=0" alt="Star Icon">
+        <div>
+            <h3>CSS</h3>
+            <p>CSS é uma linguagem de estilo que controla a apresentação visual de um site. Com ela, você pode definir cores, fontes, tamanhos de texto, layout e muito mais.</p>
+            <p>Por exemplo, um trecho de código CSS para estilizar um título seria:</p>
+            <pre>h1 {
+    color: #ff0000;
+    font-size: 24px;
+}</pre>
+        </div>
+    </div>
+    <div class="feature">
+        <img src="https://th.bing.com/th/id/OIP.25vSXGJsvi1u3JIjcfvfNQHaEo?rs=1&pid=ImgDetMain" alt="Lightbulb Icon">
+        <div>
+            <h3>JavaScript</h3>
+            <p>JavaScript é uma linguagem de programação de alto nível, amplamente utilizada para tornar as páginas web interativas e dinâmicas. Com ela, você pode criar animações, manipular eventos do usuário, validar formulários e muito mais.</p>
+            <p>Por exemplo, um trecho de código JavaScript para exibir uma mensagem de alerta seria:</p>
+            <pre>alert("Olá, mundo!");</pre>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contato</h2>
+    <p>Tem alguma dúvida ou sugestão? Retire com nosso professor rubens!</p>
+    <p>Desenvolvido pelo aluno Cauã Matos.</p>
+
+    <div class="interactive-box">
+        <label for="turma">Qual sua turma?</label>
+        <select name="turma" id="turma">
+            <option value="3007">3007</option>
+            <option value="3008">3008</option>
+        </select>
+    </div>
+    <div class="interactive-box">
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" name="nome">
+    </div>
+    <div class="interactive-box rating">
+        <p class="rating-text">De uma nota para esse pequeno trabalho  </p>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="5 estrelas">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="4 estrelas">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="3 estrelas">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="2 estrelas">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="1 estrela">&#9733;</label>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Lógica Aplicada. 3007. CEBA</p>
+    <p>Desenvolvido por Cauã Matos</p>
+</footer>
+
+<!-- Botão contato -->
+<div class="whatsapp-btn">
+    <a href="https://www.instagram.com/_cauaz1n_/" target="_blank">
+        <img src="https://img2.gratispng.com/20180703/kos/kisspng-computer-icons-web-development-software-developer-5b3bd69a2c1f61.5269974515306482181807.jpg" alt="WhatsApp">
+    </a>
+</div>
+
+</body>
+</html>
